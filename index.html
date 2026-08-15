@@ -1,0 +1,1090 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sair Sapata - Bhopal's Premier Recreation Destination</title>
+
+    <!-- Google Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351361840615541" crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-9351361840615541">
+    <meta name="description" content="Explore Sair Sapata, Bhopal's premier recreation destination with a 183m suspension bridge, toy trains, and musical fountains.">
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R267VFV2S1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-R267VFV2S1');
+    </script>
+    <!-- Tailwind for utility classes if needed, though custom CSS handles most -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow-x: hidden;
+        width: 100%;
+        background-color: #ffffff;
+        color: #334155;
+        }
+        
+        * {
+        box-sizing: border-box;
+        }
+
+        .page-wrapper {
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden; /* Critical for preventing white line on right */
+        }
+
+        /* Header Styles */
+        .header {
+        background: linear-gradient(135deg, #db2777 0%, #2563eb 100%); /* Pink to Blue */
+        color: white;
+        padding: 0.75rem 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        }
+
+        .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+
+        .site-title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin: 0;
+        }
+
+        /* Desktop Nav */
+        .nav-links {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+        }
+
+        .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: opacity 0.3s;
+        }
+
+        .nav-links a:not(.donate-btn):hover {
+        opacity: 0.8;
+        }
+
+        /* Donate Button Styling - GREEN BRAND COLOR */
+        .donate-btn {
+            background-color: #10b981; /* Brand Green */
+            color: white !important;
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-weight: 700 !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .donate-btn:hover {
+            background-color: #059669; /* Darker Green */
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Menu Styles */
+        #mobile-menu-btn {
+            display: none; /* Hidden by default on desktop */
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        #mobile-menu {
+            display: none; /* Hidden by default */
+            width: 100%;
+            background: #db2777; /* Pink background for mobile menu */
+            padding: 1rem 0;
+            margin-top: 0.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        #mobile-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* Hero Section - WITH BACKGROUND IMAGE AND OVERLAY */
+        .hero {
+        /* Background Image */
+        background-image: url('assets/front.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        width: 100%;
+        min-height: calc(100vh - 72px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        /* Gradient Overlay for Readability - Increased opacity */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* Increased opacity from 0.75 to 0.85 for better contrast */
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.85) 0%, rgba(5, 150, 105, 0.85) 100%);
+            z-index: 5;
+        }
+
+        .hero-content {
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10; /* Ensure content is above the overlay */
+        }
+
+        .hero-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        margin: 0 0 1.5rem 0;
+        line-height: 1.2;
+        text-shadow: 0 0 15px rgba(0,0,0,0.9); /* Stronger text shadow */
+        }
+
+        .hero-description {
+        font-size: 1.35rem;
+        line-height: 1.8;
+        margin: 0 0 2.5rem 0;
+        opacity: 0.95;
+        text-shadow: 0 0 10px rgba(0,0,0,0.8); /* Stronger text shadow */
+        }
+
+        .cta-button {
+        background: white;
+        color: #db2777; /* Pink Text */
+        padding: 1rem 2.5rem;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        color: #be185d; /* Darker Pink */
+        }
+
+        /* Main Content */
+        .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+        width: 100%;
+        }
+
+        .section {
+        margin-bottom: 5rem;
+        }
+
+        .section-title {
+        font-size: 2.5rem;
+        color: #1e3a8a; /* Deep Blue for headings */
+        margin: 0 0 1.5rem 0;
+        font-weight: 700;
+        text-align: center;
+        }
+
+        .section-description {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #475569;
+        margin: 0 auto 3rem auto;
+        text-align: center;
+        max-width: 800px;
+        }
+
+        /* Info Grid for More About Section */
+        .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+        }
+        
+        .info-text p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #475569;
+        }
+
+        .info-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .stat-box {
+            background: #ecfdf5; /* Very Light Green Tint */
+            padding: 2rem 1rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid #d1fae5;
+        }
+        
+        .stat-box:hover {
+            transform: translateY(-5px);
+            border-color: #10b981;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #db2777; /* Pink Numbers */
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+
+        /* Essentials Section */
+        .essentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .essential-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: border-color 0.3s;
+        }
+        
+        .essential-card:hover {
+            border-color: #db2777; /* Pink border on hover */
+        }
+
+        .essential-title {
+            font-size: 1.5rem;
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #10b981; /* Green Underline */
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        
+        .price-row:last-child {
+            border-bottom: none;
+        }
+
+        .price-label { font-weight: 500; color: #334155; }
+        .price-value { font-weight: 700; color: #059669; /* Green Price */ }
+
+        /* Features Grid (Used for 6 Steps) */
+        .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+        }
+
+        .feature-card {
+        background: white;
+        padding: 0;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: 1px solid #e5e7eb;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .feature-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        border-color: #db2777; /* Pink border on hover */
+        }
+
+        .feature-image {
+        width: 100%;
+        height: 200px;
+        background: #f3f4f6;
+        }
+
+        .feature-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+        .feature-content {
+        padding: 1.5rem;
+        }
+
+        .feature-icon-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        }
+
+        .feature-icon {
+        font-size: 2rem;
+        }
+
+        .step-badge {
+        background-color: #fce7f3; /* Light Pink */
+        color: #db2777; /* Pink Text */
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        }
+
+        .feature-title {
+        font-size: 1.35rem;
+        color: #1e3a8a;
+        margin: 0 0 0.5rem 0;
+        font-weight: 700;
+        }
+        
+        .feature-time {
+        font-size: 0.85rem;
+        color: #10b981; /* Green Time */
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 0.75rem;
+        display: block;
+        }
+
+        .feature-text {
+        font-size: 0.95rem;
+        color: #6b7280;
+        line-height: 1.6;
+        margin: 0;
+        }
+
+        /* Attractions Section */
+        .attractions {
+        background: #f8fafc;
+        padding: 4rem 2rem;
+        width: 100%; 
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        }
+
+        .attractions-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        }
+
+        .attractions-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+        }
+
+        /* Attraction Item Style */
+        .attraction-item {
+        background: white;
+        padding: 0;
+        border-radius: 12px;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        }
+        
+        .attraction-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            border-color: #2563eb; /* Blue border on hover */
+        }
+
+        .attraction-name {
+        font-size: 1.25rem;
+        color: #1e3a8a;
+        margin: 0 0 0.5rem 0;
+        font-weight: 600;
+        }
+
+        .attraction-desc {
+        font-size: 0.95rem;
+        color: #6b7280;
+        margin: 0;
+        line-height: 1.5;
+        }
+
+        .attraction-image {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 0;
+        border-radius: 0;
+        overflow: hidden;
+        background: #f3f4f6;
+        }
+
+        .attraction-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+        .attraction-content-wrapper {
+            padding: 1.5rem;
+        }
+
+        /* Visit Today Section */
+        .visit-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .visit-text-content h3 {
+            font-size: 2rem;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .visit-text-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #475569;
+            margin-bottom: 2rem;
+        }
+
+        .visit-contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .visit-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #fdf2f8; /* Light Pink Tint */
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #db2777; /* Pink Border */
+        }
+
+        .visit-map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            height: 100%;
+            min-height: 400px;
+        }
+
+        .visit-map-container iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            display: block;
+        }
+
+        /* Footer (Simplified) */
+        .footer {
+        background: #1e293b; /* Dark Slate Blue */
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        width: 100%;
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.2s;
+            margin: 0 0.5rem;
+        }
+
+        .footer-links a:hover {
+            color: #db2777; /* Pink hover */
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .developer-credit {
+            font-size: 0.85rem;
+            margin-top: 0.75rem;
+            color: #cbd5e1;
+        }
+
+        .mahsua-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .mahsua-link:hover {
+            color: #db2777; /* Pink hover */
+            text-decoration: underline;
+        }
+
+        /* MOBILE RESPONSIVE STYLES */
+        @media (max-width: 768px) {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+        .section-title {
+            font-size: 2rem;
+        }
+        .features-grid, .info-grid, .visit-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        /* Hide Desktop Nav Links */
+        .nav-links {
+            display: none;
+        }
+
+        /* Show Hamburger Menu Button */
+        #mobile-menu-btn {
+            display: block;
+        }
+
+        /* FIXED ATTRACTIONS FOR MOBILE */
+        .attractions {
+            padding: 4rem 1.5rem; /* Reduced horizontal padding for small screens */
+            width: 100%;
+            margin: 0;
+        }
+        
+        .main-content {
+            padding: 4rem 1.5rem;
+        }
+        
+        .visit-map-container {
+            min-height: 300px; /* Adjust map height on small screens */
+        }
+        }
+    </style>
+ </head>
+ <body>
+  <div class="page-wrapper">
+   
+   <!-- Header -->
+   <header class="header">
+    <div class="header-content">
+     <div>
+      <h1 class="site-title"><a href="https://sairsapata.mahsua.com/">Sair Sapata Bhopal</h1>
+     </div>
+     
+     <!-- Desktop Nav -->
+     <nav class="nav-links">
+         <a href="#about">About</a> 
+         <a href="#visitor-guide">Visitor Guide</a> 
+         <a href="#attractions">Attractions</a> 
+         <a href="#more-about">More Info</a>
+         <a href="#visit-today">Visit Today</a>
+         <a href="https://technology.mahsua.com/pages/donate.html" class="donate-btn">Donate</a>
+     </nav>
+
+     <!-- Mobile Menu Button (Hamburger) -->
+     <button id="mobile-menu-btn" onclick="toggleMobileMenu()">
+         ☰
+     </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu">
+         <a href="#about" onclick="toggleMobileMenu()">About</a> 
+         <a href="#visitor-guide" onclick="toggleMobileMenu()">Visitor Guide</a> 
+         <a href="#attractions" onclick="toggleMobileMenu()">Attractions</a> 
+         <a href="#more-about" onclick="toggleMobileMenu()">More Info</a>
+         <a href="#visit-today" onclick="toggleMobileMenu()">Visit Today</a>
+         <a href="https://technology.mahsua.com/pages/donate.html" onclick="toggleMobileMenu()" style="color: #fbbf24; font-weight: bold;">Donate</a>
+    </div>
+   </header>
+
+   <!-- Hero Section -->
+   <section class="hero">
+    <div class="hero-content">
+     <h2 class="hero-title">Experience the Magic of Upper Lake</h2>
+     <p class="hero-description">A 24-acre recreation paradise featuring India's first RCC pedestrian suspension bridge, toy trains, and musical fountains.</p>
+     <button class="cta-button" onclick="document.getElementById('visitor-guide').scrollIntoView({ behavior: 'smooth' })">Plan Your Visit</button>
+    </div>
+   </section>
+
+   <!-- Main Content -->
+   <main class="main-content">
+    
+    <!-- About Section (Intro Only) -->
+    <section class="section" id="about">
+     <h3 class="section-title">About Sair Sapata</h3>
+     <p class="section-description">
+         Developed by the Madhya Pradesh State Tourism Development Corporation (MPSTDC), Sair Sapata is a tourism and entertainment complex situated on the banks of Bada Talaab (Upper Lake). Inaugurated on September 29, 2011, it was designed to provide families and tourists with a world-class recreational space.
+     </p>
+    </section>
+
+    <!-- Visitor Guide Section -->
+    <section class="section" id="visitor-guide">
+     <h3 class="section-title">Visitor Flow & Experience Steps</h3>
+     <p class="section-description">Follow this recommended itinerary to make the most of your evening at Sair Sapata.</p>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351361840615541"
+        crossorigin="anonymous"></script>
+    <!-- Horizontal Full Size -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-9351361840615541"
+        data-ad-slot="5893405602"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+     <div class="features-grid">
+      <!-- Steps 1-6 -->
+      <div class="feature-card">
+       <div class="feature-image">
+           <img src="./assets/parking.png" alt="Parking">
+       </div>
+       <div class="feature-content">
+           <div class="feature-icon-wrapper">
+               <span class="feature-icon">🚗</span>
+               <span class="step-badge">Step 1</span>
+           </div>
+           <h4 class="feature-title">Parking & Arrival</h4>
+           <span class="feature-time">4:30 PM - 4:45 PM</span>
+           <p class="feature-text">Secure parking is available (Car: ₹20 / Bike: ₹10). Pay the minimal entry fee (₹20/Adult) at the gate. Arriving late afternoon helps you beat the heat.</p>
+       </div>
+      </div>
+      <div class="feature-card">
+       <div class="feature-image">
+           <img src="./assets/bridge.jpg" alt="Bridge">
+       </div>
+       <div class="feature-content">
+           <div class="feature-icon-wrapper">
+               <span class="feature-icon">🌉</span>
+               <span class="step-badge">Step 2</span>
+           </div>
+           <h4 class="feature-title">Bridge Walk & Views</h4>
+           <span class="feature-time">4:45 PM - 5:30 PM</span>
+           <p class="feature-text">Walk across the 183m Suspension Bridge. This is the best time for daylight photography and appreciating the unique RCC engineering and lake panorama.</p>
+       </div>
+      </div>
+      <div class="feature-card">
+       <div class="feature-image">
+           <img src="./assets/train.jpg" alt="Toy Train">
+       </div>
+       <div class="feature-content">
+           <div class="feature-icon-wrapper">
+               <span class="feature-icon">🎢</span>
+               <span class="step-badge">Step 3</span>
+           </div>
+           <h4 class="feature-title">Family Fun & Rides</h4>
+           <span class="feature-time">5:30 PM - 6:30 PM</span>
+           <p class="feature-text">Head to the 2-acre Children's Play Zone. Enjoy the Toy Train (~₹25), animal rides, or adrenaline activities like Zorbing and Car Dashing while the sun is still up.</p>
+       </div>
+      </div>
+      <div class="feature-card">
+       <div class="feature-image">
+           <img src="https://placehold.co/600x400/F59E0B/FFFFFF?text=Sunset+View" alt="Sunset">
+       </div>
+       <div class="feature-content">
+           <div class="feature-icon-wrapper">
+               <span class="feature-icon">🌅</span>
+               <span class="step-badge">Step 4</span>
+           </div>
+           <h4 class="feature-title">Sunset Tranquility</h4>
+           <span class="feature-time">6:30 PM - 7:00 PM</span>
+           <p class="feature-text">Find a spot at one of the designated Viewpoints. Watch the sun dip below the hills across Bada Talaab for a moment of peace before the evening lights turn on.</p>
+       </div>
+      </div>
+      <div class="feature-card">
+       <div class="feature-image">
+           <img src="./assets/fountain.jpg" alt="Fountain">
+       </div>
+       <div class="feature-content">
+           <div class="feature-icon-wrapper">
+               <span class="feature-icon">⛲</span>
+               <span class="step-badge">Step 5</span>
+           </div>
+           <h4 class="feature-title">Musical Fountain Show</h4>
+           <span class="feature-time">7:00 PM - 8:00 PM</span>
+           <p class="feature-text">The main evening event. The fountain dances to music and lights, and the bridge is fully illuminated, creating spectacular reflections on the water.</p>
+       </div>
+      </div>
+      <div class="feature-card">
+       <div class="feature-image">
+           <img src="./assets/food.jpg" alt="Dinner">
+       </div>
+       <div class="feature-content">
+           <div class="feature-icon-wrapper">
+               <span class="feature-icon">🍽️</span>
+               <span class="step-badge">Step 6</span>
+           </div>
+           <h4 class="feature-title">Dinner & Departure</h4>
+           <span class="feature-time">8:00 PM Onwards</span>
+           <p class="feature-text">Grab a snack at the kiosks or head to Van Vihar Road for a full dinner. The complex stays open until 10:00 PM for a leisurely exit.</p>
+       </div>
+      </div>
+     </div>
+    </section>
+   </main>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351361840615541"
+        crossorigin="anonymous"></script>
+    <!-- Horizontal Full Size -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-9351361840615541"
+        data-ad-slot="5893405602"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+   <!-- Attractions Detail Section (Now using feature-card style for consistency) -->
+   <section class="attractions" id="attractions">
+    <div class="attractions-content">
+     <h3 class="section-title">Key Attractions Detail</h3>
+     <p class="section-description" style="margin-bottom: 3rem;">Explore the specific facilities that make Sair Sapata a unique destination.</p>
+     
+     <div class="features-grid"> 
+      <div class="feature-card"> 
+       <div class="feature-image"> 
+           <img src="./assets/bridge-night.jpg" alt="Suspension Bridge">
+       </div>
+       <div class="feature-content"> 
+           <h4 class="feature-title">Suspension Bridge</h4>
+           <p class="feature-text">A 183m long cable-stayed bridge modeled after Laxman Jhula, illuminated brilliantly at night.</p>
+       </div>
+      </div>
+      <div class="feature-card">
+       <div class="feature-image">
+           <img src="./assets/train.jpg" alt="Toy Train">
+       </div>
+       <div class="feature-content">
+           <h4 class="feature-title">Toy Train</h4>
+           <p class="feature-text">A delightful miniature train ride that circles the park, a favorite among children.</p>
+       </div>
+      </div>
+      <div class="feature-card">
+       <div class="feature-image">
+           <img src="./assets/fountain.jpg" alt="Musical Fountain">
+       </div>
+       <div class="feature-content">
+           <h4 class="feature-title">Musical Fountain</h4>
+           <p class="feature-text">Synchronized water jets, colorful lights, and music create a mesmerizing evening show.</p>
+       </div>
+      </div>
+      <div class="feature-card">
+       <div class="feature-image">
+           <img src="./assets/boat.jpg" alt="Boating Club">
+       </div>
+       <div class="feature-content">
+           <h4 class="feature-title">Boating Club</h4>
+           <p class="feature-text">Enjoy pedal boats, speed boats, and rowboats on the serene waters of the Upper Lake.</p>
+       </div>
+      </div>
+      <div class="feature-card">
+       <div class="feature-image">
+           <img src="./assets/park.jpg" alt="Children's Park">
+       </div>
+       <div class="feature-content">
+           <h4 class="feature-title">Children's Park</h4>
+           <p class="feature-text">A massive 2-acre dedicated play area with modern swings and safe play equipment.</p>
+       </div>
+      </div>
+      <div class="feature-card">
+       <div class="feature-image">
+           <img src="./assets/adventure.jpg" alt="Adventure Zone">
+       </div>
+       <div class="feature-content">
+           <h4 class="feature-title">Adventure Zone</h4>
+           <p class="feature-text">Thrilling activities including Zorbing, car dashing, and forest hiking trails.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- More About Sair Sapata -->
+   <section class="section" id="more-about" style="max-width: 1200px; margin: 0 auto 5rem auto; padding: 0 2rem;">
+        <h3 class="section-title">More About Sair Sapata Bhopal</h3>
+        <p class="section-description">Discover the story, engineering, and statistics behind this iconic destination.</p>
+        
+        <div class="info-grid">
+            <div class="info-text">
+                <p>The name "Sair Sapata" essentially translates to "Pleasure Trip." The complex serves as a vital green lung for the city and a cultural hub. Its design philosophy integrates modern engineering with the natural landscape, ensuring that despite the rides and activities, the serenity of the lake remains the focal point.</p>
+                <p>The architectural highlight is the Suspension Bridge, modeled after the famous Lachman Jhula in Rishikesh. Uniquely, it is believed to be the first pedestrian bridge in India built using Reinforced Cement Concrete (RCC) deck slabs, making it a marvel of modern civil engineering.</p>
+            </div>
+            <div class="info-stats">
+                <div class="stat-box">
+                    <span class="stat-number">24.5</span>
+                    <span class="stat-label">Acres Area</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">183m</span>
+                    <span class="stat-label">Bridge Length</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">2011</span>
+                    <span class="stat-label">Est. Year</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">3.6m</span>
+                    <span class="stat-label">Bridge Width</span>
+                </div>
+            </div>
+        </div>
+   </section>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351361840615541"
+        crossorigin="anonymous"></script>
+    <!-- Horizontal Full Size -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-9351361840615541"
+        data-ad-slot="5893405602"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+   <!-- Visitor Essentials -->
+   <section class="section" id="essentials" style="max-width: 1200px; margin: 0 auto 5rem auto; padding: 0 2rem;">
+        <h3 class="section-title">Visitor Essentials</h3>
+        <p class="section-description">Everything you need to know before you arrive.</p>
+        
+        <div class="essentials-grid">
+            <div class="essential-card">
+                <h4 class="essential-title">Entry Fees & Charges</h4>
+                <div class="price-row">
+                    <span class="price-label">Adult Entry</span>
+                    <span class="price-value">₹20</span>
+                </div>
+                <div class="price-row">
+                    <span class="price-label">Child Entry</span>
+                    <span class="price-value">₹10</span>
+                </div>
+                <div class="price-row">
+                    <span class="price-label">Toy Train</span>
+                    <span class="price-value">~₹25 / ride</span>
+                </div>
+                <div class="price-row">
+                    <span class="price-label">Car Parking</span>
+                    <span class="price-value">₹20</span>
+                </div>
+                <div class="price-row">
+                    <span class="price-label">Two-Wheeler Parking</span>
+                    <span class="price-value">₹10</span>
+                </div>
+            </div>
+
+            <div class="essential-card">
+                <h4 class="essential-title">Timings & Best Time</h4>
+                <div class="price-row">
+                    <span class="price-label">Opening Hours</span>
+                    <span class="price-value">11:00 AM - 10:00 PM</span>
+                </div>
+                <div class="price-row">
+                    <span class="price-label">Weekly Off</span>
+                    <span class="price-value">Open All Days</span>
+                </div>
+                <div class="price-row">
+                    <span class="price-label">Best Arrival Time</span>
+                    <span class="price-value">4:30 PM (Sunset)</span>
+                </div>
+                <div class="price-row">
+                    <span class="price-label">Musical Fountain</span>
+                    <span class="price-value">After 7:00 PM</span>
+                </div>
+                <p class="text-sm text-gray-500 mt-4 italic">Note: Timings may vary on Tuesdays (often opens later at 4:30 PM).</p>
+            </div>
+
+            <div class="essential-card">
+                <h4 class="essential-title">Getting There</h4>
+                <p class="mb-4"><strong>Address:</strong> Bhadbhada Road, Prempura, Bhopal, Madhya Pradesh.</p>
+                <p class="mb-4">Located near the famous Van Vihar National Park.</p>
+                <div class="price-row">
+                    <span class="price-label">From Bhopal Junction</span>
+                    <span class="price-value">~9 km</span>
+                </div>
+                <div class="price-row">
+                    <span class="price-label">From Airport</span>
+                    <span class="price-value">~18 km</span>
+                </div>
+                <div class="price-row">
+                    <span class="price-label">Nearest Landmark</span>
+                    <span class="price-value">Bhadbhada Dam</span>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <!-- Visit Today Section with Map -->
+   <section class="section" id="visit-today" style="max-width: 1200px; margin: 0 auto 5rem auto; padding: 0 2rem;">
+        <h3 class="section-title">Visit Sair Sapata Today!</h3>
+        
+        <div class="visit-grid">
+            <!-- Left Column: Contact Information -->
+            <div class="visit-text-content">
+                <p>Create unforgettable memories with your loved ones at Bhopal's favorite recreational destination. Whether you are looking for a peaceful sunset stroll, exciting adventure sports, or a fun family picnic, Sair Sapata has it all.</p>
+                
+                <div class="visit-contact-list">
+                    <div class="visit-contact-item">
+                        <span class="contact-icon" style="font-size: 1.5rem;">📍</span> 
+                        <div>
+                            <strong>Location</strong><br>
+                            Bhadbhada Road, Prempura, Bhopal
+                        </div>
+                    </div>
+                    <div class="visit-contact-item">
+                        <span class="contact-icon" style="font-size: 1.5rem;">🕐</span> 
+                        <div>
+                            <strong>Hours</strong><br>
+                            Open Daily: 11:00 AM - 10:00 PM
+                        </div>
+                    </div>
+                    <div class="visit-contact-item">
+                        <span class="contact-icon" style="font-size: 1.5rem;">🎟️</span> 
+                        <div>
+                            <strong>Entry</strong><br>
+                            ₹20 Adults / ₹10 Kids
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Map -->
+            <div class="visit-map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.73672752043!2d77.37145958885498!3d23.216263299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c5d2d86e5ad31%3A0x2a5eb2945731c2e!2sSair%20Sapata%2C%20Bhopal!5e0!3m2!1sen!2sin!4v1764420701158!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+   </section>
+
+   <!-- Nearby Places Section -->
+   <section class="section" id="nearby-places" style="max-width: 1200px; margin: 0 auto 5rem auto; padding: 0 2rem;">
+        <h3 class="section-title">More Nearby Places to Visit</h3>
+        <p class="section-description">Extend your trip by exploring these famous landmarks located just minutes away.</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="./assets/Van-Vihar.jpg" alt="Van Vihar">
+                </div>
+                <div class="feature-content">
+                    <h4 class="feature-title">Van Vihar National Park</h4>
+                    <p class="feature-text">A unique open zoo situated right next door, perfect for wildlife spotting in a natural habitat.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="./assets/Manav-Sangrahalaya.jpg" alt="Manav Sangrahalaya">
+                </div>
+                <div class="feature-content">
+                    <h4 class="feature-title">Manav Sangrahalaya (IGRMS)</h4>
+                    <p class="feature-text">An impressive open-air anthropology museum showcasing India's tribal heritage and culture.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="./assets/Science-Center.jpg" alt="Science Center">
+                </div>
+                <div class="feature-content">
+                    <h4 class="feature-title">Regional Science Center</h4>
+                    <p class="feature-text">A great spot for kids and students with interactive science exhibits and a planetarium.</p>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer" id="contact">
+    <div class="footer-content">
+     <div class="footer-links">
+         <a href="./disclaimer.html">Disclaimer</a> | <a href="https://technology.mahsua.com/pages/donate.html">Donate</a>
+     </div>
+     <div class="copyright" style="margin-top: 1rem; border: none;">
+      <p>© 2024 Sair Sapata, Bhopal. Informal Visitor Guide.</p>
+      <p class="developer-credit">
+          Developed by <a href="https://technology.mahsua.com" target="_blank" class="mahsua-link">Mahsua Technology</a> With ❤️ INDIA (Free and Open-Source)
+      </p>
+     </div>
+    </div>
+   </footer>
+
+  <script>
+      function toggleMobileMenu() {
+          const menu = document.getElementById('mobile-menu');
+          if (menu.style.display === 'block') {
+              menu.style.display = 'none';
+          } else {
+              menu.style.display = 'block';
+          }
+      }
+  </script>
+ </body>
+</html>
